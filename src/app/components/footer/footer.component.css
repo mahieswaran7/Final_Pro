@@ -1,0 +1,26 @@
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #ffffff;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .btn-outline-secondary {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: #ffffff;
+    color: #343a40;
+  }
+  

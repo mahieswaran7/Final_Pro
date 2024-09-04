@@ -1,0 +1,67 @@
+.rooms-section {
+  padding: 50px 20px;
+  background-color: #f8f9fa; /* Light background for the section */
+}
+
+.room-card {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.room-card:hover {
+  transform: scale(1.05); /* Zoom in effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.room-card img {
+  height: 300px; /* Fixed height for the images */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.room-card:hover img {
+  transform: scale(1.1); /* Zoom in image on hover */
+}
+
+.room-card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.room-card .card-title {
+  font-size: 1.5rem;
+  color: #0056b3; /* Deep blue color */
+  margin-bottom: 15px;
+}
+
+.room-card .card-text {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.room-card .btn-primary {
+  background-color: #0056b3; /* Deep blue background */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.room-card .btn-primary:hover {
+  background-color: #004494; /* Slightly darker blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .room-card {
+    margin-bottom: 20px;
+  }
+
+  .room-card img {
+    height: 250px; /* Adjust height for smaller screens */
+  }
+}
