@@ -1,26 +1,51 @@
-footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
+/* Footer Styling */
+.footer {
+  background-color: #0056b3; /* Deep blue background */
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-media {
+  margin-bottom: 15px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #ffffff; /* Default icon color */
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease; /* Ensure smooth transitions */
+}
+
+.social-icon:hover {
+  color: #f7c800; /* Dark yellow color for hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.social-icon:active {
+  color: #e6b800; /* Slightly darker yellow on click */
+  transform: scale(0.9); /* Zoom-out effect on click */
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .social-icon {
+    font-size: 20px; /* Smaller icons on mobile */
+    margin: 0 8px;
   }
-  
-  footer a {
-    color: #ffffff;
-    margin: 0 10px;
+
+  .footer-text {
+    font-size: 0.875rem;
   }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
-  
-  .btn-outline-secondary {
-    border-color: #ffffff;
-    color: #ffffff;
-  }
-  
-  .btn-outline-secondary:hover {
-    background-color: #ffffff;
-    color: #343a40;
-  }
-  
+}

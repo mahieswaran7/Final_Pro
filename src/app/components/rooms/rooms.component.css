@@ -1,67 +1,69 @@
-.rooms-section {
-  padding: 50px 20px;
-  background-color: #f8f9fa; /* Light background for the section */
-}
-
-.room-card {
-  margin-bottom: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-}
-
-.room-card:hover {
-  transform: scale(1.05); /* Zoom in effect on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.room-card img {
-  height: 300px; /* Fixed height for the images */
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.room-card:hover img {
-  transform: scale(1.1); /* Zoom in image on hover */
-}
-
-.room-card .card-body {
+/* Room Cards Container */
+.rooms-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
   padding: 20px;
+}
+
+/* Single Room Card */
+.room-card {
+  width: calc(33.333% - 20px); /* 3 cards per row with space */
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease; /* Enhanced transitions */
+}
+
+/* Hover Effects */
+.room-card:hover {
+  transform: translateY(-10px) scale(1.05); /* Slight lift and zoom effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow for depth */
+  filter: brightness(1.05); /* Slight increase in brightness */
+}
+
+/* Card Image */
+.room-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease; /* Smooth transition for image zoom */
+}
+
+/* Hover Effect on Image */
+.room-card:hover .room-image {
+  transform: scale(1.1); /* Zoom effect on image */
+}
+
+/* Card Information */
+.room-info {
+  padding: 15px;
   text-align: center;
 }
 
-.room-card .card-title {
+.room-info h3 {
+  margin: 0 0 10px;
   font-size: 1.5rem;
-  color: #0056b3; /* Deep blue color */
-  margin-bottom: 15px;
-}
-
-.room-card .card-text {
-  font-size: 1rem;
   color: #333;
-  margin-bottom: 20px;
 }
 
-.room-card .btn-primary {
-  background-color: #0056b3; /* Deep blue background */
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+.room-info p {
+  margin: 0;
+  color: #666;
 }
 
-.room-card .btn-primary:hover {
-  background-color: #004494; /* Slightly darker blue */
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .room-card {
+    width: calc(50% - 20px); /* 2 cards per row */
+  }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .room-card {
-    margin-bottom: 20px;
-  }
-
-  .room-card img {
-    height: 250px; /* Adjust height for smaller screens */
+    width: 100%; /* 1 card per row */
   }
 }

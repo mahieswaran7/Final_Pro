@@ -1,41 +1,73 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-rooms',
   templateUrl: './rooms.component.html',
   styleUrls: ['./rooms.component.css']
 })
-export class RoomsComponent {
+export class RoomsComponent implements OnInit {
   rooms = [
     {
-      name: 'Deluxe Room',
-      description: 'A luxurious room with a king-sized bed, sea view, and all modern amenities.',
-      image: 'assets/images/deluxe-room.jpg'
+      title: 'Deluxe Room',
+      description: 'A luxurious room with a stunning view.',
+      image: 'assets/slide1.jpg'
     },
     {
-      name: 'Suite',
-      description: 'Spacious suite with a living area, sea view, and premium services.',
-      image: 'assets/images/suite.jpg'
+      title: 'Suite Room',
+      description: 'Spacious suite with modern amenities.',
+      image: 'assets/slide2.jpg'
     },
     {
-      name: 'Standard Room',
-      description: 'Comfortable room with a queen-sized bed, garden view, and essential amenities.',
-      image: 'assets/images/standard-room.jpg'
+      title: 'Standard Room',
+      description: 'Comfortable room with all basic facilities.',
+      image: 'assets/slide3.jpg'
     },
     {
-      name: 'Family Room',
-      description: 'A room perfect for families, with two queen-sized beds and a play area.',
-      image: 'assets/images/family-room.jpg'
+      title: 'Executive Suite',
+      description: 'An executive suite with premium facilities.',
+      image: 'assets/slide4.jpg'
     },
     {
-      name: 'Executive Room',
-      description: 'A business-class room with a workspace, high-speed internet, and city views.',
-      image: 'assets/images/executive-room.jpg'
+      title: 'Family Room',
+      description: 'A large room suitable for families.',
+      image: 'assets/slide5.jpg'
     },
     {
-      name: 'Penthouse Suite',
-      description: 'The most luxurious suite, with a private terrace, hot tub, and panoramic views.',
-      image: 'assets/images/penthouse-suite.jpg'
+      title: 'Honeymoon Suite',
+      description: 'A romantic suite perfect for newlyweds.',
+      image: 'assets/slide6.jpg'
+    },
+    // {
+    //   title: 'Presidential Suite',
+    //   description: 'The most luxurious suite with top-class amenities.',
+    //   image: 'assets/slide7.jpg'
+    // },
+    // {
+    //   title: 'Single Room',
+    //   description: 'A cozy room perfect for solo travelers.',
+    //   image: 'assets/slide8.jpg'
+    // },
+    // {
+    //   title: 'Double Room',
+    //   description: 'A comfortable room for two guests.',
+    //   image: 'assets/slide9.jpg'
+    // },
+    {
+      title: 'Penthouse Suite',
+      description: 'An exclusive suite with panoramic views.',
+      image: 'assets/slide10.jpg'
+    },
+    {
+      title: 'Garden Suite',
+      description: 'A suite with a private garden.',
+      image: 'assets/slide11.jpg'
+    },
+    {
+      title: 'Ocean View Room',
+      description: 'A room with breathtaking ocean views.',
+      image: 'assets/slide12.jpg'
     }
   ];
+
+  ngOnInit(): void {}
 }
