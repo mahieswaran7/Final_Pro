@@ -6,6 +6,7 @@ import { RoomsComponent } from './components/rooms/rooms.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PartnersComponent } from './partners/partners.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PartnersComponent } from './partners/partners.component';
     ContactComponent,
     FooterComponent,
     PartnersComponent,
+    AboutComponent,
  
   
    
