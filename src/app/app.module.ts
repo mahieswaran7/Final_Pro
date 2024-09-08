@@ -7,6 +7,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PartnersComponent } from './partners/partners.component';
 import { AboutComponent } from './components/about/about.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AboutComponent } from './components/about/about.component';
     FooterComponent,
     PartnersComponent,
     AboutComponent,
+    HomeComponent,
  
   
    
